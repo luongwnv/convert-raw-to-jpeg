@@ -1,0 +1,21 @@
+{
+  "name": "arwef",
+  "productName": "Arwef",
+  "author": "Luong Nguyen",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "sharp": "^0.33.2"
+  },
+  "build": {
+    "appId": "com.example.arwef",
+    "mac": {
+      "icon": "app-icon.icns"
+    }
+  }
+}

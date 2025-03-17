@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2e;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.light-mode {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+#drop-area {
+    border: 2px dashed #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    margin: 20px auto;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+#drop-area.dragover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+#progress {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+body.light-mode #drop-area {
+    border-color: #007bff;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode button {
+    background-color: #28a745;
+}
+
+body.light-mode button:hover {
+    background-color: #1e7e34;
+}

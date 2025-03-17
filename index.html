@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARW to JPEG Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .drop-area {
+            border: 2px dashed #ccc;
+            padding: 20px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .drop-area.dragover {
+            background-color: #f0f0f0;
+            border-color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ARW to JPEG Converter</h1>
+
+    <div id="drop-area" class="drop-area">
+        <p>Drag & Drop an ARW file here or <button id="file-button">Select File</button></p>
+        <input type="file" id="file-input" accept=".arw" hidden>
+    </div>
+
+    <div id="preview"></div>
+
+    <button id="convert-button" disabled>Convert</button>
+
+    <script src="renderer.js"></script>
+</body>
+
+</html>
